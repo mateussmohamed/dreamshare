@@ -1,0 +1,34 @@
+---
+name: Button
+menu: Molecules
+---
+
+import { Playground, PropsTable } from 'docz'
+import Button from './index'
+import LayoutTemplate from '../../templates/LayoutTemplate'
+
+# Button
+<PropsTable of={Button} />
+
+## Basic usage
+<Playground>
+  <LayoutTemplate>
+    <div style={{ background: '#bfbfbf' }}>
+      <Button>
+        Default
+      </Button>
+
+      <Button primary>
+        Primary
+      </Button>
+
+      <Button secondary>
+        Secondary
+      </Button>
+
+      <Button ghost>
+        Ghost
+      </Button>
+    </div>
+  </LayoutTemplate>
+</Playground>
