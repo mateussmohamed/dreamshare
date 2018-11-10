@@ -26,7 +26,16 @@ const typography = {
   roboto: '"Roboto", sans-serif',
   buttonSize: '14px',
 
-  button: {
+  montserratStyle: {
+    'font-family': '"Montserrat", sans-serif',
+    'font-weight': 'normal',
+    'font-style': 'normal',
+    'font-stretch': 'normal',
+    'line-height': 'normal',
+    'letter-spacing': 'normal',
+  },
+
+  robotoStyle: {
     'font-family': '"Montserrat", sans-serif',
     'font-weight': 'normal',
     'font-style': 'normal',

@@ -72,7 +72,7 @@ const ButtonStyled = styled.button`
   cursor: pointer;
 
   ${defaultStyle};
-  ${props => props.theme.typography.button};
+  ${props => props.theme.typography.montserratStyle};
   ${props => props.primary && primaryStyle};
   ${props => props.secondary && secondaryStyle};
   ${props => props.ghost && ghostStyle};
