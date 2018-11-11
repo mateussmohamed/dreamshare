@@ -82,7 +82,6 @@ workflows:
           requires:
             - build
             - test
-            - hold
           filters:
             branches:
               only: master
