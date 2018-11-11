@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:8.9.4
+      - image: circleci/node:8.11.4-browsers
 
     working_directory: ~/dreamshare
 
@@ -23,7 +23,7 @@ jobs:
 
   test:
     docker:
-      - image: circleci/node:8.9.4
+      - image: circleci/node:8.11.4-browsers
 
     working_directory: ~/dreamshare
 
@@ -38,7 +38,7 @@ jobs:
       - run: yarn test
   lint:
     docker:
-      - image: circleci/node:8.9.4
+      - image: circleci/node:8.11.4-browsers
 
     working_directory: ~/dreamshare
 
@@ -55,7 +55,7 @@ jobs:
   # Deploying
   deploy-prod:
     docker:
-      - image: circleci/node:8.9.4
+      - image: circleci/node:8.11.4-browsers
     working_directory: ~/dreamshare
 
     steps:
