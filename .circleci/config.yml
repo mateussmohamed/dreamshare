@@ -1,23 +1,14 @@
-# Javascript Node CircleCI 2.0 configuration file
-#
-# Check https://circleci.com/docs/2.0/language-javascript/ for more details
-#
+defaults: &defaults
+  #working_directory: ./circleci
+  docker:
+    - image: circleci/node:8
+
 version: 2
 jobs:
-  build:
-    docker:
-      # specify the version you desire here
-      - image: circleci/node:7.10
-
-      # Specify service dependencies here if necessary
-      # CircleCI maintains a library of pre-built images
-      # documented at https://circleci.com/docs/2.0/circleci-images/
-      # - image: circleci/mongo:3.4.4
-
-    working_directory: ~/repo
-
-    steps:
-      - checkout
+  prepare:
+    <<: *defaults
+      steps:
+        - checkout
 
       # Download and cache dependencies
       - restore_cache:
@@ -29,11 +20,52 @@ jobs:
       - run: yarn install
 
       - save_cache:
+        paths:
+          - node_modules
+        key: v1-dependencies-{{ checksum "package.json" }}
+      - persist_to_workspace:
+          root: .
           paths:
             - node_modules
-          key: v1-dependencies-{{ checksum "package.json" }}
+  build:
+    <<: *defaults
+    steps:
+      - checkout
+      - attach_workspace:
+          at: .
+      - run: yarn build
+      - persist_to_workspace:
+          root: .
+          paths:
+            - build
 
-      # run tests!
-      - run: yarn test
+  test:
+  <<: *defaults
+  steps:
+    - checkout
+    - attach_workspace:
+        at: .
+    - run: yarn test
 
+  lint:
+    <<: *defaults
+    steps:
+      - checkout
+      - attach_workspace:
+          at: .
+      - run: yarn lint
 
+workflows:
+  version: 2
+  build_accept_deploy:
+    jobs:
+      - prepare
+      - lint:
+          requires:
+            - prepare
+      - build:
+          requires:
+            - lint
+      - testes:
+          requires:
+            - build
