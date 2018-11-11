@@ -5,22 +5,19 @@ menu: Atoms
 
 import { Playground, PropsTable } from 'docz'
 import Logo from './index'
-import LayoutTemplate from '../../templates/LayoutTemplate'
 
 # Logo
 <PropsTable of={Logo} />
 
-## Basic usage
+
 <Playground>
-  <LayoutTemplate>
-    <div style={{ background: '#bfbfbf', padding: 20 }}>
-      <Logo />
-      <br />
-      <Logo text="Dreamshare" />
-      <br />
-      <Logo text="Dreamshare" color="tomato" />
-      <br />
-      <Logo text="Dreamshare" color="purple" size={40} />
-    </div>
-  </LayoutTemplate>
+  <div style={{ background: '#bfbfbf', padding: 20 }}>
+    <Logo />
+    <br />
+    <Logo text="Dreamshare" />
+    <br />
+    <Logo text="Dreamshare" color="tomato" />
+    <br />
+    <Logo text="Dreamshare" color="purple" size={40} />
+  </div>
 </Playground>
