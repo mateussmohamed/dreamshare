@@ -39,6 +39,7 @@ const secondaryStyle = css`
   border: 0;
   background-color: #ff4e50;
   color: #fff;
+  font-weight: bold;
 
   :hover {
     background-color: #ff4e50;
@@ -60,7 +61,7 @@ const ghostStyle = css`
 const ButtonStyled = styled.button`
   ${borderRadius('top', '40px')};
   ${borderRadius('bottom', '40px')};
-  ${margin('1em')};
+  ${margin('0.25em')};
   ${padding('0.25em', '1em', '0.25em', '1em')};
   ${transitions(['color', 'background-color', 'border'], '.2s ease-in-out')};
 
