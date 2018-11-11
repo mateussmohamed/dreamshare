@@ -1,5 +1,5 @@
 defaults: &defaults
-  working_directory: ~/dreamshare
+  working_directory: ~/workspace/repo
   docker:
     - image: circleci/node:8.11.4-browsers
 
