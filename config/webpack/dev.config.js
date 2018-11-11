@@ -23,14 +23,16 @@ module.exports = {
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.DefinePlugin({ 'process.env': { NODE_ENV: '"development"' } }),
-    // new Copy(common.copyLoader),
+    new Copy(common.copyLoader),
     new HtmlPlugin(common.htmlPluginConfig),
   ],
 
   module: {
     rules: [
-      common.jsLoader
-      // common.jsLoader, common.cssLoader, common.fileLoader, common.urlLoader
+      common.jsLoader,
+      common.fileLoader,
+      common.jsLoader,
+      common.urlLoader,
     ],
   },
 
