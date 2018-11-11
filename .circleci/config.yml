@@ -1,94 +1,88 @@
+defaults: &defaults
+  working_directory: ~/dreamshare
+  docker:
+    - image: circleci/node:8.11.4-browsers
+
+to_persist: &to_persist
+  root: ~/workspace
+  paths:
+    - repo/*
+
 version: 2
 jobs:
-  build:
-    docker:
-      - image: circleci/node:8.11.4-browsers
-
-    working_directory: ~/dreamshare
-
+  checkout:
+    <<: *defaults
     steps:
       - checkout
-
       - restore_cache:
-          name: Restore Yarn Package Cache
           keys:
-            - yarn-packages-{{ checksum "yarn.lock" }}
+            - v1-dependencies-{{ .Branch }}-{{ checksum "yarn.lock" }}
+            - v1-dependencies-{{ checksum "yarn.lock" }}
+            - v1-dependencies-
       - run:
-          name: Install Dependencies
-          command: yarn install
-
+          name: Install dependencies
+          command: |
+            yarn install
       - save_cache:
-          name: Save Yarn Package Cache
-          key: yarn-packages-{{ checksum "yarn.lock" }}
+          key: v1-dependencies-{{ checksum "yarn.lock" }}
           paths:
-            - ~/.cache/yarn
-
-      - restore_cache:
-          keys:
-          - v1-dependencies-{{ checksum "package.json" }}
-          - v1-dependencies-
-
+            - node_modules
+      - persist_to_workspace:
+          <<: *to_persist
   test:
-    docker:
-      - image: circleci/node:8.11.4-browsers
-
-    working_directory: ~/dreamshare
-
+    <<: *defaults
     steps:
-      - checkout
+      - attach_workspace:
+          at: ~/workspace
+      - run:
+          name: Test React components and generate coverage report
+          command: |
+            yarn test:coverage --ci
+      - persist_to_workspace:
+          <<: *to_persist
 
-      - restore_cache:
-          keys:
-          - v1-dependencies-{{ checksum "package.json" }}
-          - v1-dependencies-
-
-      - run: yarn run test:coverage
-  lint:
-    docker:
-      - image: circleci/node:8.11.4-browsers
-
-    working_directory: ~/dreamshare
-
+  build:
+    <<: *defaults
     steps:
-      - checkout
+      - attach_workspace:
+          at: ~/workspace
+      - run:
+          name:  Build React components
+          command: yarn build
+      - persist_to_workspace:
+          <<: *to_persist
 
-      - restore_cache:
-          keys:
-          - v1-dependencies-{{ checksum "package.json" }}
-          - v1-dependencies-
-
-      - run: yarn lint
-
-  # Deploying
-  deploy-prod:
-    docker:
-      - image: circleci/node:8.11.4-browsers
-    working_directory: ~/dreamshare
-
+  deploy:
+    <<: *defaults
     steps:
-      - checkout
-
-      - command: # shell
-
+      - attach_workspace:
+            at: ~/workspace
+        - run:
+            name: Deployment
+            command: |
+              yarn
 
 workflows:
   version: 2
   build-and-deploy:
     jobs:
-      - build:
-          filters:
-            branches:
-              only:
-                - master
-
+      - checkout
       - test:
-          requires:
-            - build
+        requires:
+          - checkout
+    - build:
+      requires:
+          - test
+      filters:
+        branches:
+          only:
+            - master
 
-      - deploy-prod:
-          requires:
-            - build
-            - test
-          filters:
-            branches:
-              only: master
+    - deploy:
+        requires:
+          - checkout
+          - test
+          - build
+        filters:
+          branches:
+            only: master
