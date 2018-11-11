@@ -54,16 +54,16 @@ jobs:
 
 workflows:
   version: 2
-    default:
-      jobs:
-        - checkout
-        - test:
+  default:
+    jobs:
+      - checkout
+      - test:
           requires:
             - checkout
       - build:
-        requires:
+          requires:
             - test
-        filters:
-          branches:
-            only:
-              - master
+          filters:
+            branches:
+              only:
+                - master
