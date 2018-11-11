@@ -52,37 +52,18 @@ jobs:
       - persist_to_workspace:
           <<: *to_persist
 
-  deploy:
-    <<: *defaults
-    steps:
-      - attach_workspace:
-            at: ~/workspace
-        - run:
-            name: Deployment
-            command: |
-              yarn
-
 workflows:
   version: 2
-  build-and-deploy:
-    jobs:
-      - checkout
-      - test:
+    default:
+      jobs:
+        - checkout
+        - test:
+          requires:
+            - checkout
+      - build:
         requires:
-          - checkout
-    - build:
-      requires:
-          - test
-      filters:
-        branches:
-          only:
-            - master
-
-    - deploy:
-        requires:
-          - checkout
-          - test
-          - build
+            - test
         filters:
           branches:
-            only: master
+            only:
+              - master
