@@ -6,6 +6,7 @@ const config = require('./config/webpack/dev.config')
 const PORT = 7171
 
 const options = {
+  contentBase: './public',
   publicPath: config.output.publicPath,
   hot: true,
   historyApiFallback: true,
