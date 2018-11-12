@@ -67,9 +67,9 @@ module.exports = {
 
   copyLoader: [
     {
-      from: `${paths.public}/**/**`,
+      from: `${paths.public}/assets`,
       ignore: ['*.html'],
-      to: `${paths.build}/[name].[ext]`,
+      to: `${paths.build}/assets`,
     },
   ],
 
