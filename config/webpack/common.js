@@ -78,7 +78,7 @@ module.exports = {
     modules: [paths.src, 'node_modules'],
     alias: {
       src: paths.src,
-      components: paths.src,
+      components: paths.components,
       atoms: paths.atoms,
       molecules: paths.molecules,
       organisms: paths.organisms,

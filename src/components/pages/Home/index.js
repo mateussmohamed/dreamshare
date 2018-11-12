@@ -2,6 +2,7 @@ import React from 'react'
 
 import { Page } from 'templates'
 import { Hero } from 'organisms'
+// import { Page, Hero } from 'components'
 
 const Home = () => (
   <Page>

@@ -1,10 +1,19 @@
 import React from 'react'
 import { shallow } from 'enzyme'
+import 'jest-styled-components'
 
 import Hero from './index'
 
-test('[<Hero />]', () => {
-  const wrapper = shallow(<Hero />)
+describe('[<Hero />]', () => {
+  const wrap = (props = {}) => shallow(<Hero {...props} />).dive()
 
-  expect(wrapper).toMatchSnapshot()
+  test('matches to snapshot', () => {
+    const wrapper = wrap({
+      title: 'Hero Title',
+      description: 'hero description',
+      srcImage: '',
+    })
+
+    expect(wrapper).toMatchSnapshot()
+  })
 })

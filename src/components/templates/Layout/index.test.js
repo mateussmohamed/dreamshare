@@ -1,10 +1,15 @@
 import React from 'react'
 import { shallow } from 'enzyme'
+import 'jest-styled-components'
 
 import Layout from '.'
 
-test('[<Layout />]', () => {
-  const wrapper = shallow(<Layout />)
+describe('[<Layout />]', () => {
+  const wrap = (props = {}) => shallow(<Layout {...props} />).dive()
 
-  expect(wrapper).toMatchSnapshot()
+  test('matches to snapshot', () => {
+    const wrapper = wrap({ children: '' })
+
+    expect(wrapper).toMatchSnapshot()
+  })
 })

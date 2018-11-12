@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[<HeroHeader />] matches to snapshot 1`] = `
+<StyledComponent
+  forwardedClass={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": undefined,
+      "componentStyle": ComponentStyle {
+        "componentId": "HeroHeader__HeroHeaderStyled-yd36gz-0",
+        "isStatic": true,
+        "rules": Array [
+          "flex-direction:row;justify-content:space-between;align-items:center;margin-top:40px;position:relative;z-index:2;",
+        ],
+      },
+      "displayName": "HeroHeader__HeroHeaderStyled",
+      "render": [Function],
+      "styledComponentId": "HeroHeader__HeroHeaderStyled-yd36gz-0",
+      "target": [Function],
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+      Symbol(Symbol.hasInstance): [Function],
+    }
+  }
+  forwardedRef={null}
+>
+  <Column
+    flex="none"
+  >
+    <Logo
+      color="#fff"
+      size={20}
+      text="Dreamshare"
+    />
+  </Column>
+  <Column
+    flex="none"
+  >
+    <Button
+      ghost={true}
+    >
+      Login
+    </Button>
+    <Button>
+      Sign Up
+    </Button>
+  </Column>
+</StyledComponent>
+`;

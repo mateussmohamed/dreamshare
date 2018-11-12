@@ -13,7 +13,7 @@
     "lint:all": "npm run lint && npm run lint:css",
     "test": "jest --updateSnapshot",
     "test:coverage": "jest --coverage",
-    "test:watch": "jest --watch",
+    "test:watch": "jest --updateSnapshot --watch",
     "coveralls": "npm run test:coverage && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls && rm -rf coverage",
     "clean": "rimraf build",
     "build": "cross-env NODE_ENV=production BABEL_ENV=production webpack --progress --config webpack/prod.config -p",
@@ -36,6 +36,7 @@
       "js",
       "jsx"
     ],
+    "moduleDirectories": ["node_modules", "src"],
     "moduleNameMapper": {
       "^src/([^\\.]*)$": "<rootDir>/src/$1",
       "^atoms(.*)$": "<rootDir>src/components/atoms$1",
@@ -43,7 +44,8 @@
       "^organisms(.*)$": "<rootDir>src/components/organisms$1",
       "^pages(.*)$": "<rootDir>src/components/pages$1",
       "^templates(.*)$": "<rootDir>src/components/templates$1",
-      "^containers(.*)$": "<rootDir>src/containers$1"
+      "^containers(.*)$": "<rootDir>src/containers$1",
+      "^components$": "<rootDir>/config/test/componentsMock.js"
     },
     "setupFiles": [
       "<rootDir>/config/test/enzyme.theme.js",
