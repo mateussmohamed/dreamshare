@@ -21,9 +21,7 @@ jobs:
             - v1-dependencies-
       - run:
           name: Install dependencies
-          command: |
-            yarn global add now
-            yarn install
+          command: yarn install
       - save_cache:
           key: v1-dependencies-{{ checksum "yarn.lock" }}
           paths:
@@ -52,16 +50,6 @@ jobs:
           command: yarn build
       - persist_to_workspace:
           <<: *to_persist
-  deploy:
-      <<: *defaults
-      steps:
-        - attach_workspace:
-            at: ~/workspace
-
-        - run:
-            name: Deployment ZEIT/NOW
-            command: |
-              yarn now --public -t ${NOW_TOKEN}
 workflows:
   version: 2
   default:
@@ -77,6 +65,3 @@ workflows:
             branches:
               only:
                 - master
-      - deploy:
-          requires:
-            - build
