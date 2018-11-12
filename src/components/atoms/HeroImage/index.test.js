@@ -1,10 +1,15 @@
 import React from 'react'
 import { shallow } from 'enzyme'
+import 'jest-styled-components'
 
 import HeroImage from './index'
 
-test('[<HeroImage />]', () => {
-  const wrapper = shallow(<HeroImage />)
+describe('[<HeroImage />]', () => {
+  const wrap = (props = {}) => shallow(<HeroImage {...props} />).dive()
 
-  expect(wrapper).toMatchSnapshot()
+  test('matches to snapshot', () => {
+    const wrapper = wrap({ src: 'assets/hero.jpg' })
+
+    expect(wrapper).toMatchSnapshot()
+  })
 })

@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[<Home />] matches to snapshot 1`] = `
+<Page__Wrapper>
+  <Hero
+    description="Find your holliday partner"
+    srcImage="/assets/images/hero.jpg"
+    title="SHARE YOUR HOLIDAY DREAM"
+  />
+</Page__Wrapper>
+`;

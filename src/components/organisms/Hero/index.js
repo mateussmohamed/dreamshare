@@ -5,6 +5,7 @@ import { Flex } from '@rebass/grid'
 
 import { HeroImage, Container } from 'atoms'
 import { HeroHeader, HeroSpotlight } from 'organisms'
+// import { HeroHeader, HeroSpotlight, HeroImage, Container } from 'components'
 
 const HeroContainer = styled(Flex)`
   width: 100%;

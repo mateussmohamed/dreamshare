@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[<HeroImage />] matches to snapshot 1`] = `
+<StyledComponent
+  forwardedClass={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": undefined,
+      "componentStyle": ComponentStyle {
+        "componentId": "HeroImage__HeroImageStyled-sc-1g3c219-0",
+        "isStatic": false,
+        "rules": Array [
+          "height: 100%; width: 100%;",
+          ";",
+          "position: absolute; top: 0; right: 0; bottom: 0; left: 0;",
+          ";background-image:",
+          [Function],
+          ";background-size:cover;background-position:center center;background-attachment:fixed;z-index:0;",
+        ],
+      },
+      "displayName": "HeroImage__HeroImageStyled",
+      "render": [Function],
+      "styledComponentId": "HeroImage__HeroImageStyled-sc-1g3c219-0",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
+  src="assets/hero.jpg"
+/>
+`;

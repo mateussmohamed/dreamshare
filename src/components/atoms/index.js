@@ -1,8 +1,9 @@
-// https://github.com/diegohaz/arc/wiki/Containers
-const req = require.context('.', true, /\.\/.+\/index\.js$/)
+import Column from './Column'
+import Container from './Container'
+import HeroDescription from './HeroDescription'
+import HeroImage from './HeroImage'
+import HeroTitle from './HeroTitle'
+import Logo from './Logo'
+import Row from './Row'
 
-req.keys().forEach(key => {
-  const componentName = key.replace(/\.\/(.+)\/.+$/, '$1')
-
-  module.exports[componentName] = req(key).default
-})
+export { Column, Container, HeroDescription, HeroImage, HeroTitle, Logo, Row }

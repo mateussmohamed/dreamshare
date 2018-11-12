@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[<Hero />] matches to snapshot 1`] = `
+<StyledComponent
+  forwardedClass={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": undefined,
+      "componentStyle": ComponentStyle {
+        "componentId": "Hero__HeroContainer-sc-1co6wbd-0",
+        "isStatic": false,
+        "rules": Array [
+          "box-sizing: border-box;",
+          [Function],
+          [Function],
+          [Function],
+          [Function],
+          [Function],
+          [Function],
+          [Function],
+          [Function],
+          "display: flex;",
+          [Function],
+          [Function],
+          [Function],
+          [Function],
+          "width:100%;height:100vh;flex-direction:column;",
+        ],
+      },
+      "displayName": "Hero__HeroContainer",
+      "propTypes": Object {
+        "alignItems": [Function],
+        "flexDirection": [Function],
+        "flexWrap": [Function],
+        "justifyContent": [Function],
+      },
+      "render": [Function],
+      "styledComponentId": "Hero__HeroContainer-sc-1co6wbd-0",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
+>
+  <HeroImage
+    src=""
+  />
+  <Hero__HeroContent>
+    <HeroHeader />
+    <HeroSpotlight
+      description="hero description"
+      title="Hero Title"
+    />
+  </Hero__HeroContent>
+</StyledComponent>
+`;

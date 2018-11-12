@@ -4,6 +4,7 @@ import styled from 'styled-components'
 
 import { Row, HeroTitle, HeroDescription } from 'atoms'
 import { Button } from 'molecules'
+// import { Row, HeroTitle, HeroDescription, Button } from 'components'
 
 const HeroSpotlightStyled = styled(Row)`
   display: flex;

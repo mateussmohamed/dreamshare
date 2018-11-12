@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[<HeroDescription />] matches to snapshot 1`] = `
+<StyledComponent
+  forwardedClass={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": undefined,
+      "componentStyle": ComponentStyle {
+        "componentId": "HeroDescription__HeroDescriptionStyled-sc-1pz9ll8-0",
+        "isStatic": false,
+        "rules": Array [
+          "margin-top: 33px; margin-right: 0; margin-bottom: 33px; margin-left: 0;",
+          ";",
+          [Function],
+          ";font-size:24px;font-weight:300;color:#f7f3f2;",
+        ],
+      },
+      "displayName": "HeroDescription__HeroDescriptionStyled",
+      "render": [Function],
+      "styledComponentId": "HeroDescription__HeroDescriptionStyled-sc-1pz9ll8-0",
+      "target": "h4",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
+>
+  I am a description
+</StyledComponent>
+`;

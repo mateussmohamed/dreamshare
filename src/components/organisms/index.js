@@ -1,8 +1,5 @@
-// https://github.com/diegohaz/arc/wiki/Containers
-const req = require.context('.', true, /\.\/.+\/index\.js$/)
+import HeroSpotlight from './HeroSpotlight'
+import Hero from './Hero'
+import HeroHeader from './HeroHeader'
 
-req.keys().forEach(key => {
-  const componentName = key.replace(/\.\/(.+)\/.+$/, '$1')
-
-  module.exports[componentName] = req(key).default
-})
+export { HeroSpotlight, Hero, HeroHeader }

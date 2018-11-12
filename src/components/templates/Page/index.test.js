@@ -1,10 +1,15 @@
 import React from 'react'
 import { shallow } from 'enzyme'
+import 'jest-styled-components'
 
 import Page from '.'
 
-test('[<Page />]', () => {
-  const wrapper = shallow(<Page />)
+describe('[<Page />]', () => {
+  const wrap = (props = {}) => shallow(<Page {...props} />).dive()
 
-  expect(wrapper).toMatchSnapshot()
+  test('matches to snapshot', () => {
+    const wrapper = wrap({ children: '' })
+
+    expect(wrapper).toMatchSnapshot()
+  })
 })
