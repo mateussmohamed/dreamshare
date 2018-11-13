@@ -1,13 +1,8 @@
 import React from 'react'
-// import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import { Container, Row, Column } from 'atoms'
 import { DreamshareStep } from 'molecules'
-
-const ContainerStyled = styled(Container)`
-  padding: 100px 0;
-`
 
 const Title = styled.h1`
   ${props => props.theme.typography.montserratStyle};
@@ -19,7 +14,7 @@ const Title = styled.h1`
 `
 
 const HowDreamshare = () => (
-  <ContainerStyled>
+  <Container>
     <Title>How Dreamshare</Title>
     <Row flexWrap="wrap">
       <Column width={[1, 1 / 3, 1 / 3]} flex="none">
@@ -47,9 +42,7 @@ const HowDreamshare = () => (
         />
       </Column>
     </Row>
-  </ContainerStyled>
+  </Container>
 )
-
-// HowDreamshare.propTypes = {}
 
 export default HowDreamshare
