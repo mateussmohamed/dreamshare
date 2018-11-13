@@ -22,7 +22,7 @@ const HowDreamshare = () => (
   <ContainerStyled>
     <Title>How Dreamshare</Title>
     <Row flexWrap="wrap">
-      <Column flex="1 1 0">
+      <Column width={[1, 1 / 3, 1 / 3]} flex="none">
         <DreamshareStep
           badge="Step 1"
           title="Sed leo enim, condimentum"
@@ -30,7 +30,7 @@ const HowDreamshare = () => (
           image="/assets/images/planing-trip.jpg"
         />
       </Column>
-      <Column flex="1 1 0">
+      <Column width={[1, 1 / 3, 1 / 3]} flex="none">
         <DreamshareStep
           badge="Step 2"
           title="Morbi velit risus"
@@ -38,7 +38,7 @@ const HowDreamshare = () => (
           image="/assets/images/road-trip.jpg"
         />
       </Column>
-      <Column flex="1 1 0">
+      <Column width={[1, 1 / 3, 1 / 3]} flex="none">
         <DreamshareStep
           badge="Step 3"
           title="Sed leo enim, condimentum"

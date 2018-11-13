@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Page } from 'templates'
-import { Hero, HowDreamshare } from 'organisms'
+import { Hero, HowDreamshare, Footer } from 'organisms'
 
 const Home = () => (
   <Page>
@@ -11,6 +11,7 @@ const Home = () => (
       srcImage="/assets/images/hero.jpg"
     />
     <HowDreamshare />
+    <Footer />
   </Page>
 )
 

@@ -1,7 +1,12 @@
 import { createGlobalStyle } from 'styled-components'
 import { normalize } from 'polished'
 
-export const GlobalStyle = createGlobalStyle`${normalize()}`
+export const GlobalStyle = createGlobalStyle`
+  body {
+    overflow-x: hidden;
+  }
+  ${normalize()};
+`
 
 const colors = {
   lightRed: '#ff4e50',
