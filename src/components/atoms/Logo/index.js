@@ -6,7 +6,7 @@ import { em } from 'polished'
 const LogoStyled = styled.a`
   ${props => props.theme.typography.montserratStyle};
   font-size: ${props => em(props.size)};
-  font-weight: bold;
+  font-weight: ${props => props.weight};
   text-transform: uppercase;
   color: ${props => props.color};
 `
@@ -17,12 +17,14 @@ Logo.defaultProps = {
   text: 'Logo',
   color: '#fff',
   size: 20,
+  weight: 'bold',
 }
 
 Logo.propTypes = {
   text: PropTypes.string.isRequired,
   color: PropTypes.string,
   size: PropTypes.number,
+  weight: PropTypes.string,
 }
 
 export default Logo
