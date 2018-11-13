@@ -6,10 +6,10 @@ import theme, { GlobalStyle } from '../../theme'
 
 const Layout = props => (
   <ThemeProvider theme={theme}>
-    <div>
+    <React.Fragment>
       <GlobalStyle />
       {props.children}
-    </div>
+    </React.Fragment>
   </ThemeProvider>
 )
 

@@ -3,7 +3,6 @@ import styled from 'styled-components'
 
 import { Row, Column, Logo } from 'atoms'
 import { Button } from 'molecules'
-// import { Row, Column, Logo, Button } from 'components'
 
 const HeroHeaderStyled = styled(Row)`
   flex-direction: row;
