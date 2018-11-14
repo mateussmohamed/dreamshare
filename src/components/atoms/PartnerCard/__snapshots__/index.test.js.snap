@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[<PartnerCard />] matches to snapshot 1`] = `
+<StyledComponent
+  forwardedClass={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": undefined,
+      "componentStyle": ComponentStyle {
+        "componentId": "PartnerCard-p9fmon-0",
+        "isStatic": true,
+        "rules": Array [
+          "display:flex;flex-direction:column;align-items:center;",
+        ],
+      },
+      "displayName": "PartnerCard",
+      "render": [Function],
+      "styledComponentId": "PartnerCard-p9fmon-0",
+      "target": "article",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
+/>
+`;

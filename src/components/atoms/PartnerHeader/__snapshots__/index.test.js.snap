@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[<PartnerHeader />] matches to snapshot 1`] = `
+<StyledComponent
+  forwardedClass={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": undefined,
+      "componentStyle": ComponentStyle {
+        "componentId": "PartnerHeader-sc-40ws0q-0",
+        "isStatic": true,
+        "rules": Array [
+          "width:120px;height:120px;position:relative;",
+        ],
+      },
+      "displayName": "PartnerHeader",
+      "render": [Function],
+      "styledComponentId": "PartnerHeader-sc-40ws0q-0",
+      "target": "header",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
+/>
+`;

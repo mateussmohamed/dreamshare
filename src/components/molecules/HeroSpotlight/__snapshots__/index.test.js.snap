@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[<HeroSpotlight />] matches to snapshot 1`] = `
+<StyledComponent
+  forwardedClass={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": undefined,
+      "componentStyle": ComponentStyle {
+        "componentId": "HeroSpotlight__HeroSpotlightContainer-sc-1d6634a-0",
+        "isStatic": true,
+        "rules": Array [
+          "flex-direction:column;justify-content:center;align-items:center;max-width:500px;text-align:center;@media only screen and (min-width:320px){margin:20px auto;padding:0 20px;button{width:100%;}}@media only screen and (min-width:768px){margin:auto auto;padding:0;button{width:auto;}}",
+        ],
+      },
+      "displayName": "HeroSpotlight__HeroSpotlightContainer",
+      "render": [Function],
+      "styledComponentId": "HeroSpotlight__HeroSpotlightContainer-sc-1d6634a-0",
+      "target": [Function],
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+      Symbol(Symbol.hasInstance): [Function],
+    }
+  }
+  forwardedRef={null}
+>
+  <HeroTitle>
+    SHARE YOUR HOLIDAY DREAM
+  </HeroTitle>
+  <HeroDescription>
+    And find the perfect partner to fullfill it
+  </HeroDescription>
+  <Button
+    secondary={true}
+  >
+    Find your holliday partner
+  </Button>
+</StyledComponent>
+`;

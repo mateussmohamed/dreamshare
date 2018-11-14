@@ -1,40 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`[<Logo />] matches to snapshot 1`] = `
-<StyledComponent
+<Logo__LogoStyled
   color="#fff"
-  forwardedClass={
-    Object {
-      "$$typeof": Symbol(react.forward_ref),
-      "attrs": undefined,
-      "componentStyle": ComponentStyle {
-        "componentId": "Logo__LogoStyled-sc-11yt4xf-0",
-        "isStatic": false,
-        "rules": Array [
-          [Function],
-          ";font-size:",
-          [Function],
-          ";font-weight:",
-          [Function],
-          ";text-transform:uppercase;color:",
-          [Function],
-          ";",
-        ],
-      },
-      "displayName": "Logo__LogoStyled",
-      "render": [Function],
-      "styledComponentId": "Logo__LogoStyled-sc-11yt4xf-0",
-      "target": "a",
-      "toString": [Function],
-      "warnTooManyClasses": [Function],
-      "withComponent": [Function],
-    }
-  }
-  forwardedRef={null}
   size={20}
   text="Logo"
   weight="bold"
 >
   Logo
-</StyledComponent>
+</Logo__LogoStyled>
 `;

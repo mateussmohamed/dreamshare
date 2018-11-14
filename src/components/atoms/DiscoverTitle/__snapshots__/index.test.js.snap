@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[<DiscoverTitle />] matches to snapshot 1`] = `
+<StyledComponent
+  forwardedClass={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": undefined,
+      "componentStyle": ComponentStyle {
+        "componentId": "DiscoverTitle-sc-1yzz7od-0",
+        "isStatic": false,
+        "rules": Array [
+          [Function],
+          ";font-size:22px;font-weight:bold;text-align:center;color:",
+          [Function],
+          ";@media only screen and (min-width:320px){padding:0 25px;margin:0;}",
+        ],
+      },
+      "displayName": "DiscoverTitle",
+      "render": [Function],
+      "styledComponentId": "DiscoverTitle-sc-1yzz7od-0",
+      "target": "h2",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
+>
+  I am a Title
+</StyledComponent>
+`;

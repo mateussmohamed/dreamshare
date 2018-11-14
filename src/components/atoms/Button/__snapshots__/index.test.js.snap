@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[<Button />] matches to snapshot 1`] = `
+<Button__ButtonStyled>
+  I am a Title
+</Button__ButtonStyled>
+`;
+
+exports[`[<Button />] when pass props ghost 1`] = `
+<Button__ButtonStyled
+  ghost={true}
+>
+  Ghot Button
+</Button__ButtonStyled>
+`;
+
+exports[`[<Button />] when pass props primary 1`] = `
+<Button__ButtonStyled
+  primary={true}
+>
+  Primay Button
+</Button__ButtonStyled>
+`;
+
+exports[`[<Button />] when pass props secondary 1`] = `
+<Button__ButtonStyled
+  secondary={true}
+>
+  Secondary Button
+</Button__ButtonStyled>
+`;

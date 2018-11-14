@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[<DreamshareTitle />] matches to snapshot 1`] = `
+<StyledComponent
+  forwardedClass={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": undefined,
+      "componentStyle": ComponentStyle {
+        "componentId": "DreamshareTitle-fg36s1-0",
+        "isStatic": false,
+        "rules": Array [
+          [Function],
+          ";color:",
+          [Function],
+          ";font-weight:bold;text-align:center;@media only screen and (min-width:320px){font-size:26px;margin:35px 0 15px 0;}@media only screen and (min-width:768px){margin:95px 0 35px 0;}",
+        ],
+      },
+      "displayName": "DreamshareTitle",
+      "render": [Function],
+      "styledComponentId": "DreamshareTitle-fg36s1-0",
+      "target": "h1",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
+>
+  I am a Title
+</StyledComponent>
+`;

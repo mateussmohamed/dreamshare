@@ -2,10 +2,7 @@
 
 exports[`[<Home />] matches to snapshot 1`] = `
 <Page__Wrapper>
-  <Hero
-    description="And find the perfect partner to fullfill it"
-    title="SHARE YOUR HOLIDAY DREAM"
-  />
+  <Hero />
   <HowDreamshare />
   <DiscoverPartners />
   <SearchPartners />

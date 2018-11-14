@@ -23,5 +23,7 @@ exports[`[<Page />] matches to snapshot 1`] = `
     }
   }
   forwardedRef={null}
-/>
+>
+  <Footer />
+</StyledComponent>
 `;

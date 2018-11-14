@@ -9,9 +9,9 @@ exports[`[<HowDreamshare />] matches to snapshot 1`] = `
   }
   mx="auto"
 >
-  <HowDreamshare__Title>
+  <DreamshareTitle>
     How Dreamshare
-  </HowDreamshare__Title>
+  </DreamshareTitle>
   <Row
     flexWrap="wrap"
     mx={0}

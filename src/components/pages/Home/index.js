@@ -4,24 +4,17 @@ import { Page } from 'templates'
 import {
   Hero,
   HowDreamshare,
-  SearchPartners,
   DiscoverPartners,
-  Footer,
+  SearchPartners,
 } from 'organisms'
 
 const Home = () => (
   <Page>
-    <Hero
-      title="SHARE YOUR HOLIDAY DREAM"
-      description="And find the perfect partner to fullfill it"
-    />
+    <Hero />
     <HowDreamshare />
     <DiscoverPartners />
     <SearchPartners />
-    <Footer />
   </Page>
 )
-
-Home.propTypes = {}
 
 export default Home
