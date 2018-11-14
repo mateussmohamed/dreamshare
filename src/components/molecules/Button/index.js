@@ -27,6 +27,7 @@ const primaryStyle = css`
   ${border('2px', 'solid', '#ff4e50')};
   background-color: ${transparentize(100, '#fff')};
   color: #ff4e50;
+  font-weight: bold;
 
   :hover {
     background-color: #ff4e50;
