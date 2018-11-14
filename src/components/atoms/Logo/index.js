@@ -1,11 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { em } from 'polished'
 
 const LogoStyled = styled.a`
   ${props => props.theme.typography.montserratStyle};
-  font-size: ${props => em(props.size)};
+  font-size: ${props => props.size};
   font-weight: ${props => props.weight};
   text-transform: uppercase;
   color: ${props => props.color};
