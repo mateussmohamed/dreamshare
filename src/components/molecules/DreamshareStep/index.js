@@ -4,8 +4,6 @@ import styled from 'styled-components'
 
 const DreamshareStepStyled = styled.article`
   width: auto;
-  height: 400px;
-  padding: 220px 25px 25px 25px;
   border-radius: 3px;
   background-image: linear-gradient(
       to bottom,
@@ -20,6 +18,17 @@ const DreamshareStepStyled = styled.article`
   align-items: flex-start;
   justify-content: space-between;
   box-sizing: border-box;
+
+  @media only screen and (min-width: 320px) {
+    height: 240px;
+    padding: 60px 20px 20px 20px;
+    margin-bottom: 20px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    height: 400px;
+    padding: 220px 25px 25px 25px;
+  }
 `
 
 const BadgeStep = styled.span`

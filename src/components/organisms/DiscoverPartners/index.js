@@ -10,6 +10,11 @@ const Title = styled.h1`
   font-weight: bold;
   text-align: center;
   color: ${props => props.theme.colors.greyishBrown};
+
+  @media only screen and (min-width: 320px) {
+    padding: 0 25px;
+    margin: 0;
+  }
 `
 
 const FlexColumn = styled(Column)`
@@ -26,15 +31,24 @@ const Partners = styled.section`
   flex-wrap: wrap;
 `
 
+const SeeOtherPartners = styled(Button)`
+  @media only screen and (min-width: 320px) {
+    width: 100%;
+  }
+  @media only screen and (min-width: 768px) {
+    width: auto;
+  }
+`
+
 const DiscoverPartners = () => (
   <Container m={['20px auto', '40px auto', '100px auto']}>
-    <Row justifyContent="center" mb={50}>
+    <Row justifyContent="center" mb={[10, 50, 50]}>
       <Title>Meet a partner for your best holiday</Title>
     </Row>
     <Row flexDirection="column" mx={0}>
-      <FlexColumn width={[1, 1, 1]}>
+      <FlexColumn flex="none">
         <Partners>
-          <Column width={[1, 1 / 2, 1 / 4]} flex="none">
+          <Column width={[1, 1 / 2, 1 / 4]} px={0} flex="none">
             <Partner
               name="Bradley Hunter"
               bio="Based in Chicago. I love playing tennis and loud music."
@@ -42,35 +56,35 @@ const DiscoverPartners = () => (
               icon="/assets/icons/music.svg"
             />
           </Column>
-          <Column width={[1, 1 / 2, 1 / 4]} flex="none">
+          <Column width={[1, 1 / 2, 1 / 4]} px={0} flex="none">
             <Partner
-              name="Bradley Hunter"
+              name="Marie Bennett"
               avatar="/assets/images/partner-2.jpg"
-              bio="Based in Chicago. I love playing tennis and loud music."
+              bio="Currently living in Colorado. Lover of art, languages and travelling."
               icon="/assets/icons/brush.svg"
             />
           </Column>
-          <Column width={[1, 1 / 2, 1 / 4]} flex="none">
+          <Column width={[1, 1 / 2, 1 / 4]} px={0} flex="none">
             <Partner
-              name="Bradley Hunter"
+              name="Diana Wells"
               avatar="/assets/images/partner-3.jpg"
-              bio="Based in Chicago. I love playing tennis and loud music."
+              bio="Living in Athens, Greece. I love black and white classics, chillout music and green tea."
               icon="/assets/icons/camera.svg"
             />
           </Column>
-          <Column width={[1, 1 / 2, 1 / 4]} flex="none">
+          <Column width={[1, 1 / 2, 1 / 4]} px={0} flex="none">
             <Partner
-              name="Bradley Hunter"
+              name="Christopher Pierce"
               avatar="/assets/images/partner-4.jpg"
-              bio="Based in Chicago. I love playing tennis and loud music."
+              bio="Star Wars fanatic. I have a persistent enthusiasm to create new things."
               icon="/assets/icons/airplane.svg"
             />
           </Column>
         </Partners>
       </FlexColumn>
     </Row>
-    <Row justifyContent="center" mt={50}>
-      <Button primary>See other partners</Button>
+    <Row justifyContent="center" mt={[0, 20, 50]} px={[25, 0, 0]}>
+      <SeeOtherPartners primary>See other partners</SeeOtherPartners>
     </Row>
   </Container>
 )

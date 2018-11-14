@@ -6,7 +6,6 @@ const PartnerItem = styled.article`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 10px;
 `
 
 const PartnerHeader = styled.header`
