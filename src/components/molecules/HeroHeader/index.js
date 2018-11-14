@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { Row, Column, Logo } from 'atoms'
 import { Button } from 'molecules'
 
-const HeroHeaderStyled = styled(Row)`
+const HeroHeaderContainer = styled(Row)`
   justify-content: space-between;
   align-items: center;
   position: relative;
@@ -27,7 +27,7 @@ const HeroHeaderStyled = styled(Row)`
 `
 
 const HeroHeader = props => (
-  <HeroHeaderStyled {...props}>
+  <HeroHeaderContainer {...props}>
     <Column flex="none" mt={[100, 0, 0]}>
       <Logo text="DREAMSHARE" />
     </Column>
@@ -35,7 +35,7 @@ const HeroHeader = props => (
       <Button ghost>Login</Button>
       <Button>Sign Up</Button>
     </Column>
-  </HeroHeaderStyled>
+  </HeroHeaderContainer>
 )
 
 export default HeroHeader
