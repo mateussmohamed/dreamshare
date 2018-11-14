@@ -13,8 +13,7 @@ const Home = () => (
   <Page>
     <Hero
       title="SHARE YOUR HOLIDAY DREAM"
-      description="Find your holliday partner"
-      srcImage="/assets/images/hero.jpg"
+      description="And find the perfect partner to fullfill it"
     />
     <HowDreamshare />
     <DiscoverPartners />

@@ -6,17 +6,24 @@ import { DreamshareStep } from 'molecules'
 
 const Title = styled.h1`
   ${props => props.theme.typography.montserratStyle};
-  font-size: 22px;
-  font-weight: bold;
   color: ${props => props.theme.colors.greyishBrown};
-  margin-bottom: 35px;
+  font-weight: bold;
   text-align: center;
+
+  @media only screen and (min-width: 320px) {
+    font-size: 26px;
+    margin: 35px 0 15px 0;
+  }
+
+  @media only screen and (min-width: 768px) {
+    margin: 95px 0 35px 0;
+  }
 `
 
 const HowDreamshare = () => (
   <Container>
     <Title>How Dreamshare</Title>
-    <Row flexWrap="wrap">
+    <Row flexWrap="wrap" mx={0}>
       <Column width={[1, 1 / 3, 1 / 3]} flex="none">
         <DreamshareStep
           badge="Step 1"
