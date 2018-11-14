@@ -1,11 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { Row, HeroTitle, HeroDescription } from 'atoms'
-import { Button } from 'molecules'
+import { Row, HeroTitle, HeroDescription, Button } from 'atoms'
 
 const HeroSpotlightContainer = styled(Row)`
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;

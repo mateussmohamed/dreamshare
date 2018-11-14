@@ -1,8 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { Row, Column, Logo } from 'atoms'
-import { Button } from 'molecules'
+import { Row, Column, Logo, Button } from 'atoms'
 
 const HeroHeaderContainer = styled(Row)`
   justify-content: space-between;
