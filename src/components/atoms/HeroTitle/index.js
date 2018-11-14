@@ -8,6 +8,14 @@ const HeroTitleStyled = styled.h1`
   text-align: center;
   color: #ffffff;
   margin: 0;
+
+  @media only screen and (min-width: 320px) {
+    font-size: 30px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    font-size: 52px;
+  }
 `
 
 const HeroTitle = props => (
