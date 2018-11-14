@@ -7,7 +7,7 @@ exports[`[<Hero />] matches to snapshot 1`] = `
       "$$typeof": Symbol(react.forward_ref),
       "attrs": undefined,
       "componentStyle": ComponentStyle {
-        "componentId": "Hero__HeroContainer-sc-1co6wbd-0",
+        "componentId": "HeroContainer-mwsivc-0",
         "isStatic": false,
         "rules": Array [
           "box-sizing: border-box;",
@@ -27,7 +27,7 @@ exports[`[<Hero />] matches to snapshot 1`] = `
           "width:100%;height:100vh;flex-direction:column;",
         ],
       },
-      "displayName": "Hero__HeroContainer",
+      "displayName": "HeroContainer",
       "propTypes": Object {
         "alignItems": [Function],
         "flexDirection": [Function],
@@ -35,7 +35,7 @@ exports[`[<Hero />] matches to snapshot 1`] = `
         "justifyContent": [Function],
       },
       "render": [Function],
-      "styledComponentId": "Hero__HeroContainer-sc-1co6wbd-0",
+      "styledComponentId": "HeroContainer-mwsivc-0",
       "target": "div",
       "toString": [Function],
       "warnTooManyClasses": [Function],
@@ -45,12 +45,9 @@ exports[`[<Hero />] matches to snapshot 1`] = `
   forwardedRef={null}
 >
   <HeroImage />
-  <Hero__HeroContent>
+  <HeroContent>
     <HeroHeader />
-    <HeroSpotlight
-      description="hero description"
-      title="Hero Title"
-    />
-  </Hero__HeroContent>
+    <HeroSpotlight />
+  </HeroContent>
 </StyledComponent>
 `;

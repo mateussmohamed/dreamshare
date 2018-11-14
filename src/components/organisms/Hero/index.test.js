@@ -8,11 +8,7 @@ describe('[<Hero />]', () => {
   const wrap = (props = {}) => shallow(<Hero {...props} />).dive()
 
   test('matches to snapshot', () => {
-    const wrapper = wrap({
-      title: 'Hero Title',
-      description: 'hero description',
-      srcImage: '',
-    })
+    const wrapper = wrap({})
 
     expect(wrapper).toMatchSnapshot()
   })
