@@ -11,7 +11,7 @@ exports[`[<HeroTitle />] matches to snapshot 1`] = `
         "isStatic": false,
         "rules": Array [
           [Function],
-          ";font-size:52px;font-weight:bold;text-align:center;color:#ffffff;margin:0;",
+          ";font-size:52px;font-weight:bold;text-align:center;color:#ffffff;margin:0;@media only screen and (min-width:320px){font-size:30px;}@media only screen and (min-width:768px){font-size:52px;}",
         ],
       },
       "displayName": "HeroTitle__HeroTitleStyled",

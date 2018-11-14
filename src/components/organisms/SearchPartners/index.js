@@ -51,13 +51,6 @@ const Form = styled.form`
   }
 `
 
-const ContainerStyled = styled(Container)`
-  margin: 40px auto;
-  @media only screen and (min-width: 1024px) {
-    margin: 100px auto;
-  }
-`
-
 const FlexColumn = styled(Column)`
   @media only screen and (min-width: 320px) {
     display: flex;
@@ -67,7 +60,7 @@ const FlexColumn = styled(Column)`
 `
 
 const SearchPartners = () => (
-  <ContainerStyled>
+  <Container my={[40, 90]}>
     <Row flexDirection="column" mx={0}>
       <FlexColumn width={[1, 1, 1]}>
         <Title>Crate your holiday activity</Title>
@@ -78,7 +71,7 @@ const SearchPartners = () => (
         </Form>
       </FlexColumn>
     </Row>
-  </ContainerStyled>
+  </Container>
 )
 
 export default SearchPartners

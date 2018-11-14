@@ -23,7 +23,7 @@ const HeroContent = styled(Container)`
 
 const Hero = props => (
   <HeroContainer>
-    <HeroImage src={props.srcImage} />
+    <HeroImage />
     <HeroContent>
       <HeroHeader />
       <HeroSpotlight title={props.title} description={props.description} />
@@ -34,13 +34,11 @@ const Hero = props => (
 Hero.defaultProps = {
   title: 'Your Title',
   description: 'Your description',
-  srcImage: '',
 }
 
 Hero.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  srcImage: PropTypes.string.isRequired,
 }
 
 export default Hero

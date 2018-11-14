@@ -67,14 +67,15 @@ const ButtonStyled = styled.button`
   ${transitions(['color', 'background-color', 'border'], '.2s ease-in-out')};
 
   display: 'inline-flex';
-  min-width: ${em('90px')};
-  height: ${em('40px')};
+  min-width: 90px;
+  height: 40px;
 
   outline: 0;
   cursor: pointer;
 
   ${defaultStyle};
   ${props => props.theme.typography.montserratStyle};
+  font-size: 14px;
   ${props => props.primary && primaryStyle};
   ${props => props.secondary && secondaryStyle};
   ${props => props.ghost && ghostStyle};

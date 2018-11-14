@@ -5,18 +5,31 @@ import { Row, Column, Logo } from 'atoms'
 import { Button } from 'molecules'
 
 const HeroHeaderStyled = styled(Row)`
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-top: 40px;
   position: relative;
   z-index: 2;
+  margin-left: 0;
+  margin-right: 0;
+
+  @media only screen and (min-width: 320px) {
+    margin-top: 20px;
+    flex-direction: column-reverse;
+  }
+
+  @media only screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    margin-top: 40px;
+  }
 `
 
 const HeroHeader = props => (
   <HeroHeaderStyled {...props}>
-    <Column flex="none">
-      <Logo text="Dreamshare" />
+    <Column flex="none" mt={[100, 0, 0]}>
+      <Logo text="DREAMSHARE" />
     </Column>
     <Column flex="none">
       <Button ghost>Login</Button>

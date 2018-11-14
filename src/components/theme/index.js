@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components'
 import { normalize } from 'polished'
 
 export const GlobalStyle = createGlobalStyle`
-  body {
+  body, html {
     overflow-x: hidden;
   }
   ${normalize()};

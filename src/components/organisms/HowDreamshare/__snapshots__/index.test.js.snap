@@ -1,40 +1,72 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`[<HeroSpotlight />] matches to snapshot 1`] = `
-<StyledComponent
-  forwardedClass={
+exports[`[<HowDreamshare />] matches to snapshot 1`] = `
+<Box
+  css={
     Object {
-      "$$typeof": Symbol(react.forward_ref),
-      "attrs": undefined,
-      "componentStyle": ComponentStyle {
-        "componentId": "HeroSpotlight__HeroSpotlightStyled-j4g13-0",
-        "isStatic": true,
-        "rules": Array [
-          "display:flex;flex-direction:column;justify-content:center;align-items:center;max-width:500px;margin:auto auto;text-align:center;",
-        ],
-      },
-      "displayName": "HeroSpotlight__HeroSpotlightStyled",
-      "render": [Function],
-      "styledComponentId": "HeroSpotlight__HeroSpotlightStyled-j4g13-0",
-      "target": [Function],
-      "toString": [Function],
-      "warnTooManyClasses": [Function],
-      "withComponent": [Function],
-      Symbol(Symbol.hasInstance): [Function],
+      "maxWidth": "1024px",
     }
   }
-  forwardedRef={null}
+  mx="auto"
 >
-  <HeroTitle>
-    Hero Title
-  </HeroTitle>
-  <HeroDescription>
-    hero description
-  </HeroDescription>
-  <Button
-    secondary={true}
+  <HowDreamshare__Title>
+    How Dreamshare
+  </HowDreamshare__Title>
+  <Row
+    flexWrap="wrap"
+    mx={0}
   >
-    Find your holliday partner
-  </Button>
-</StyledComponent>
+    <Column
+      flex="none"
+      width={
+        Array [
+          1,
+          0.3333333333333333,
+          0.3333333333333333,
+        ]
+      }
+    >
+      <DreamshareStep
+        badge="Step 1"
+        description="Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis."
+        image="/assets/images/planing-trip.jpg"
+        title="Sed leo enim, condimentum"
+      />
+    </Column>
+    <Column
+      flex="none"
+      width={
+        Array [
+          1,
+          0.3333333333333333,
+          0.3333333333333333,
+        ]
+      }
+    >
+      <DreamshareStep
+        badge="Step 2"
+        description="Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est."
+        image="/assets/images/road-trip.jpg"
+        title="Morbi velit risus"
+      />
+    </Column>
+    <Column
+      flex="none"
+      width={
+        Array [
+          1,
+          0.3333333333333333,
+          0.3333333333333333,
+        ]
+      }
+    >
+      <DreamshareStep
+        badge="Step 3"
+        description="Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis."
+        image="/assets/images/join-trip.jpg"
+        title="Sed leo enim, condimentum"
+      />
+    </Column>
+  </Row>
+</Box>
 `;

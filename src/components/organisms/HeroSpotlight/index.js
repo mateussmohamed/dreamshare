@@ -11,8 +11,24 @@ const HeroSpotlightStyled = styled(Row)`
   justify-content: center;
   align-items: center;
   max-width: 500px;
-  margin: auto auto;
   text-align: center;
+
+  @media only screen and (min-width: 320px) {
+    margin: 20px auto;
+    padding: 0 20px;
+
+    button {
+      width: 100%;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    margin: auto auto;
+    padding: 0;
+    button {
+      width: auto;
+    }
+  }
 `
 
 const HeroSpotlight = props => (
