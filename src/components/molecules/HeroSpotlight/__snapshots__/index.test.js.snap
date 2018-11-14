@@ -26,10 +26,10 @@ exports[`[<HeroSpotlight />] matches to snapshot 1`] = `
   forwardedRef={null}
 >
   <HeroTitle>
-    Hero Title
+    SHARE YOUR HOLIDAY DREAM
   </HeroTitle>
   <HeroDescription>
-    hero description
+    And find the perfect partner to fullfill it
   </HeroDescription>
   <Button
     secondary={true}

@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { HeroImage, HeroContainer, HeroContent } from 'atoms'
-import { HeroHeader, HeroSpotlight } from 'organisms'
+import { HeroHeader, HeroSpotlight } from 'molecules'
 
 const Hero = () => (
   <HeroContainer>

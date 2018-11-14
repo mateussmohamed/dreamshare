@@ -1,11 +1,10 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import { Row, HeroTitle, HeroDescription } from 'atoms'
 import { Button } from 'molecules'
 
-const HeroSpotlightStyled = styled(Row)`
+const HeroSpotlightContainer = styled(Row)`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,17 +30,14 @@ const HeroSpotlightStyled = styled(Row)`
   }
 `
 
-const HeroSpotlight = props => (
-  <HeroSpotlightStyled>
-    <HeroTitle>{props.title}</HeroTitle>
-    <HeroDescription>{props.description}</HeroDescription>
+const HeroSpotlight = () => (
+  <HeroSpotlightContainer>
+    <HeroTitle>SHARE YOUR HOLIDAY DREAM</HeroTitle>
+    <HeroDescription>
+      And find the perfect partner to fullfill it
+    </HeroDescription>
     <Button secondary>Find your holliday partner</Button>
-  </HeroSpotlightStyled>
+  </HeroSpotlightContainer>
 )
-
-HeroSpotlight.propTypes = {
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-}
 
 export default HeroSpotlight
