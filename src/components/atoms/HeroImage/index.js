@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { position, size } from 'polished'
 
 const getBackGround = src => `
   linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
@@ -7,9 +6,13 @@ const getBackGround = src => `
 `
 
 const HeroImage = styled.div`
-  ${size('100%', '100%')};
-  ${position('absolute', '0')};
-
+  width: 100%;
+  height: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
