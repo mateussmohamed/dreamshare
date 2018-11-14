@@ -5,7 +5,7 @@ import 'jest-styled-components'
 import PartnerBio from './index'
 
 describe('[<PartnerBio />]', () => {
-  const wrap = (props = {}) => shallow(<PartnerBio {...props} />).dive()
+  const wrap = (props = {}) => shallow(<PartnerBio {...props} />)
 
   test('matches to snapshot', () => {
     const wrapper = wrap({})

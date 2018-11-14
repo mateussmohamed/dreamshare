@@ -5,7 +5,7 @@ import 'jest-styled-components'
 import PartnerIcon from './index'
 
 describe('[<PartnerIcon />]', () => {
-  const wrap = (props = {}) => shallow(<PartnerIcon {...props} />).dive()
+  const wrap = (props = {}) => shallow(<PartnerIcon {...props} />)
 
   test('matches to snapshot', () => {
     const wrapper = wrap({})

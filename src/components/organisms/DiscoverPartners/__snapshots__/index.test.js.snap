@@ -26,21 +26,20 @@ exports[`[<DiscoverPartners />] matches to snapshot 1`] = `
       ]
     }
   >
-    <DiscoverPartners__Title>
+    <DiscoverTitle>
       Meet a partner for your best holiday
-    </DiscoverPartners__Title>
+    </DiscoverTitle>
   </Row>
   <Row
     flexDirection="column"
     mx={0}
   >
-    <DiscoverPartners__FlexColumn
+    <DiscoverPartners__RowStyled
       flex="none"
     >
-      <DiscoverPartners__Partners>
+      <DiscoverPartners__PartnersSection>
         <Column
           flex="none"
-          px={0}
           width={
             Array [
               1,
@@ -58,7 +57,6 @@ exports[`[<DiscoverPartners />] matches to snapshot 1`] = `
         </Column>
         <Column
           flex="none"
-          px={0}
           width={
             Array [
               1,
@@ -76,7 +74,6 @@ exports[`[<DiscoverPartners />] matches to snapshot 1`] = `
         </Column>
         <Column
           flex="none"
-          px={0}
           width={
             Array [
               1,
@@ -94,7 +91,6 @@ exports[`[<DiscoverPartners />] matches to snapshot 1`] = `
         </Column>
         <Column
           flex="none"
-          px={0}
           width={
             Array [
               1,
@@ -110,8 +106,8 @@ exports[`[<DiscoverPartners />] matches to snapshot 1`] = `
             name="Christopher Pierce"
           />
         </Column>
-      </DiscoverPartners__Partners>
-    </DiscoverPartners__FlexColumn>
+      </DiscoverPartners__PartnersSection>
+    </DiscoverPartners__RowStyled>
   </Row>
   <Row
     justifyContent="center"
@@ -130,11 +126,11 @@ exports[`[<DiscoverPartners />] matches to snapshot 1`] = `
       ]
     }
   >
-    <DiscoverPartners__SeeOtherPartners
+    <DiscoverPartners__ButtonStyled
       primary={true}
     >
-      See other partners
-    </DiscoverPartners__SeeOtherPartners>
+      See other partnersSection
+    </DiscoverPartners__ButtonStyled>
   </Row>
 </Box>
 `;

@@ -1,30 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`[<HeroTitle />] matches to snapshot 1`] = `
+exports[`[<PartnerCard />] matches to snapshot 1`] = `
 <StyledComponent
   forwardedClass={
     Object {
       "$$typeof": Symbol(react.forward_ref),
       "attrs": undefined,
       "componentStyle": ComponentStyle {
-        "componentId": "HeroTitle__HeroTitleStyled-sc-1d35zve-0",
-        "isStatic": false,
+        "componentId": "PartnerCard-p9fmon-0",
+        "isStatic": true,
         "rules": Array [
-          [Function],
-          ";font-size:52px;font-weight:bold;text-align:center;color:#ffffff;margin:0;@media only screen and (min-width:320px){font-size:30px;}@media only screen and (min-width:768px){font-size:52px;}",
+          "display:flex;flex-direction:column;align-items:center;",
         ],
       },
-      "displayName": "HeroTitle__HeroTitleStyled",
+      "displayName": "PartnerCard",
       "render": [Function],
-      "styledComponentId": "HeroTitle__HeroTitleStyled-sc-1d35zve-0",
-      "target": "h1",
+      "styledComponentId": "PartnerCard-p9fmon-0",
+      "target": "article",
       "toString": [Function],
       "warnTooManyClasses": [Function],
       "withComponent": [Function],
     }
   }
   forwardedRef={null}
->
-  I am a Title
-</StyledComponent>
+/>
 `;

@@ -1,23 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`[<HeroTitle />] matches to snapshot 1`] = `
+exports[`[<DreamshareStepBadge />] matches to snapshot 1`] = `
 <StyledComponent
   forwardedClass={
     Object {
       "$$typeof": Symbol(react.forward_ref),
       "attrs": undefined,
       "componentStyle": ComponentStyle {
-        "componentId": "HeroTitle__HeroTitleStyled-sc-1d35zve-0",
+        "componentId": "DreamshareStepBadge-sc-1mswk3p-0",
         "isStatic": false,
         "rules": Array [
+          "padding:3px 8px;border-radius:20px;background-color:",
           [Function],
-          ";font-size:52px;font-weight:bold;text-align:center;color:#ffffff;margin:0;@media only screen and (min-width:320px){font-size:30px;}@media only screen and (min-width:768px){font-size:52px;}",
+          ";",
+          [Function],
+          ";font-size:12px;letter-spacing:2px;text-align:center;text-transform:uppercase;color:#fff;",
         ],
       },
-      "displayName": "HeroTitle__HeroTitleStyled",
+      "displayName": "DreamshareStepBadge",
       "render": [Function],
-      "styledComponentId": "HeroTitle__HeroTitleStyled-sc-1d35zve-0",
-      "target": "h1",
+      "styledComponentId": "DreamshareStepBadge-sc-1mswk3p-0",
+      "target": "span",
       "toString": [Function],
       "warnTooManyClasses": [Function],
       "withComponent": [Function],
@@ -25,6 +28,6 @@ exports[`[<HeroTitle />] matches to snapshot 1`] = `
   }
   forwardedRef={null}
 >
-  I am a Title
+  I am badge
 </StyledComponent>
 `;

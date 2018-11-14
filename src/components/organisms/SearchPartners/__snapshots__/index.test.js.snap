@@ -15,27 +15,19 @@ exports[`[<SearchPartners />] matches to snapshot 1`] = `
     ]
   }
 >
-  <Row
+  <SearchPartners__RowStyled
     flexDirection="column"
     mx={0}
   >
-    <SearchPartners__FlexColumn
-      width={
-        Array [
-          1,
-          1,
-          1,
-        ]
-      }
-    >
-      <SearchPartners__Title>
+    <Column>
+      <SearchTitle>
         Crate your holiday activity
-      </SearchPartners__Title>
-      <SearchPartners__SubTitle>
+      </SearchTitle>
+      <SearchDescription>
         Hi! What are your holiday interests?
-      </SearchPartners__SubTitle>
-      <SearchPartners__Form>
-        <SearchPartners__Input
+      </SearchDescription>
+      <Form>
+        <Input
           placeholder="Enter your interests"
         />
         <Button
@@ -43,8 +35,8 @@ exports[`[<SearchPartners />] matches to snapshot 1`] = `
         >
           Search partners
         </Button>
-      </SearchPartners__Form>
-    </SearchPartners__FlexColumn>
-  </Row>
+      </Form>
+    </Column>
+  </SearchPartners__RowStyled>
 </Box>
 `;

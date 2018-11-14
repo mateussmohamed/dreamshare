@@ -5,7 +5,7 @@ import 'jest-styled-components'
 import Input from './index'
 
 describe('[<Input />]', () => {
-  const wrap = (props = {}) => shallow(<Input {...props} />).dive()
+  const wrap = (props = {}) => shallow(<Input {...props} />)
 
   test('matches to snapshot', () => {
     const wrapper = wrap({})

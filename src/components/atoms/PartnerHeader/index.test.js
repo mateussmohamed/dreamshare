@@ -5,7 +5,7 @@ import 'jest-styled-components'
 import PartnerHeader from './index'
 
 describe('[<PartnerHeader />]', () => {
-  const wrap = (props = {}) => shallow(<PartnerHeader {...props} />).dive()
+  const wrap = (props = {}) => shallow(<PartnerHeader {...props} />)
 
   test('matches to snapshot', () => {
     const wrapper = wrap({})

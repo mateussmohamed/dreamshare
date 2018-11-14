@@ -5,7 +5,7 @@ import 'jest-styled-components'
 import Button from './index'
 
 describe('[<Button />]', () => {
-  const wrap = (props = {}) => shallow(<Button {...props} />).dive()
+  const wrap = (props = {}) => shallow(<Button {...props} />)
 
   test('matches to snapshot', () => {
     const wrapper = wrap({ children: 'I am a Title' })

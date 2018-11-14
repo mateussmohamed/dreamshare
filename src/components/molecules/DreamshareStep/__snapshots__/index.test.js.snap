@@ -9,7 +9,7 @@ exports[`[<DreamshareStep />] matches to snapshot 1`] = `
       "$$typeof": Symbol(react.forward_ref),
       "attrs": undefined,
       "componentStyle": ComponentStyle {
-        "componentId": "DreamshareStep__DreamshareStepStyled-sc-1co70pv-0",
+        "componentId": "DreamshareStepCard-sc-1yp96kp-0",
         "isStatic": false,
         "rules": Array [
           "width:auto;border-radius:3px;background-image:linear-gradient( to bottom,rgba(0,0,0,0),rgba(0,0,0,0.6) ),url(",
@@ -17,9 +17,9 @@ exports[`[<DreamshareStep />] matches to snapshot 1`] = `
           ");background-size:cover;background-position:center center;display:flex;flex-direction:column;align-items:flex-start;justify-content:space-between;box-sizing:border-box;@media only screen and (min-width:320px){height:240px;padding:60px 20px 20px 20px;margin-bottom:20px;}@media only screen and (min-width:768px){height:400px;padding:220px 25px 25px 25px;}",
         ],
       },
-      "displayName": "DreamshareStep__DreamshareStepStyled",
+      "displayName": "DreamshareStepCard",
       "render": [Function],
-      "styledComponentId": "DreamshareStep__DreamshareStepStyled-sc-1co70pv-0",
+      "styledComponentId": "DreamshareStepCard-sc-1yp96kp-0",
       "target": "article",
       "toString": [Function],
       "warnTooManyClasses": [Function],
@@ -30,14 +30,14 @@ exports[`[<DreamshareStep />] matches to snapshot 1`] = `
   image="/assets/images/test.jpg"
   title="Sed leo enim, condimentum"
 >
-  <DreamshareStep__BadgeStep>
+  <DreamshareStepBadge>
     Step 1
-  </DreamshareStep__BadgeStep>
-  <DreamshareStep__Title>
+  </DreamshareStepBadge>
+  <DreamshareStepTitle>
     Sed leo enim, condimentum
-  </DreamshareStep__Title>
-  <DreamshareStep__Description>
+  </DreamshareStepTitle>
+  <DreamshareStepDescription>
     Quisque libero libero, 
-  </DreamshareStep__Description>
+  </DreamshareStepDescription>
 </StyledComponent>
 `;

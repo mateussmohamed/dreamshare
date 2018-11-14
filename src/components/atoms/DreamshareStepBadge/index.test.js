@@ -5,8 +5,7 @@ import 'jest-styled-components'
 import DreamshareStepBadge from './index'
 
 describe('[<DreamshareStepBadge />]', () => {
-  const wrap = (props = {}) =>
-    shallow(<DreamshareStepBadge {...props} />).dive()
+  const wrap = (props = {}) => shallow(<DreamshareStepBadge {...props} />)
 
   test('matches to snapshot', () => {
     const wrapper = wrap({ children: 'I am badge' })

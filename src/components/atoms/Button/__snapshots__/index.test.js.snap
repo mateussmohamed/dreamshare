@@ -1,212 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`[<Button />] matches to snapshot 1`] = `
-<StyledComponent
-  forwardedClass={
-    Object {
-      "$$typeof": Symbol(react.forward_ref),
-      "attrs": undefined,
-      "componentStyle": ComponentStyle {
-        "componentId": "Button__ButtonStyled-sc-1lfwom5-0",
-        "isStatic": false,
-        "rules": Array [
-          "border-top-right-radius: 40px; border-top-left-radius: 40px;",
-          ";",
-          "border-bottom-right-radius: 40px; border-bottom-left-radius: 40px;",
-          ";",
-          "margin-top: 0.25em; margin-right: 0.25em; margin-bottom: 0.25em; margin-left: 0.25em;",
-          ";",
-          "padding-top: 0.25em; padding-right: 1em; padding-bottom: 0.25em; padding-left: 1em;",
-          ";",
-          "transition: color .2s ease-in-out, background-color .2s ease-in-out, border .2s ease-in-out;",
-          ";display:'inline-flex';min-width:90px;height:40px;outline:0;cursor:pointer;",
-          "border-width: 2px; border-style: solid; border-color: #fff;",
-          ";background-color:",
-          "rgba(255,255,255,0)",
-          ";color:#fff;:hover{background-color:#fff;border-color:#fff;color:",
-          [Function],
-          ";}",
-          ";",
-          [Function],
-          ";font-size:14px;",
-          [Function],
-          ";",
-          [Function],
-          ";",
-          [Function],
-          ";",
-        ],
-      },
-      "displayName": "Button__ButtonStyled",
-      "render": [Function],
-      "styledComponentId": "Button__ButtonStyled-sc-1lfwom5-0",
-      "target": "button",
-      "toString": [Function],
-      "warnTooManyClasses": [Function],
-      "withComponent": [Function],
-    }
-  }
-  forwardedRef={null}
->
+<Button__ButtonStyled>
   I am a Title
-</StyledComponent>
+</Button__ButtonStyled>
 `;
 
 exports[`[<Button />] when pass props ghost 1`] = `
-<StyledComponent
-  forwardedClass={
-    Object {
-      "$$typeof": Symbol(react.forward_ref),
-      "attrs": undefined,
-      "componentStyle": ComponentStyle {
-        "componentId": "Button__ButtonStyled-sc-1lfwom5-0",
-        "isStatic": false,
-        "rules": Array [
-          "border-top-right-radius: 40px; border-top-left-radius: 40px;",
-          ";",
-          "border-bottom-right-radius: 40px; border-bottom-left-radius: 40px;",
-          ";",
-          "margin-top: 0.25em; margin-right: 0.25em; margin-bottom: 0.25em; margin-left: 0.25em;",
-          ";",
-          "padding-top: 0.25em; padding-right: 1em; padding-bottom: 0.25em; padding-left: 1em;",
-          ";",
-          "transition: color .2s ease-in-out, background-color .2s ease-in-out, border .2s ease-in-out;",
-          ";display:'inline-flex';min-width:90px;height:40px;outline:0;cursor:pointer;",
-          "border-width: 2px; border-style: solid; border-color: #fff;",
-          ";background-color:",
-          "rgba(255,255,255,0)",
-          ";color:#fff;:hover{background-color:#fff;border-color:#fff;color:",
-          [Function],
-          ";}",
-          ";",
-          [Function],
-          ";font-size:14px;",
-          [Function],
-          ";",
-          [Function],
-          ";",
-          [Function],
-          ";",
-        ],
-      },
-      "displayName": "Button__ButtonStyled",
-      "render": [Function],
-      "styledComponentId": "Button__ButtonStyled-sc-1lfwom5-0",
-      "target": "button",
-      "toString": [Function],
-      "warnTooManyClasses": [Function],
-      "withComponent": [Function],
-    }
-  }
-  forwardedRef={null}
+<Button__ButtonStyled
   ghost={true}
 >
   Ghot Button
-</StyledComponent>
+</Button__ButtonStyled>
 `;
 
 exports[`[<Button />] when pass props primary 1`] = `
-<StyledComponent
-  forwardedClass={
-    Object {
-      "$$typeof": Symbol(react.forward_ref),
-      "attrs": undefined,
-      "componentStyle": ComponentStyle {
-        "componentId": "Button__ButtonStyled-sc-1lfwom5-0",
-        "isStatic": false,
-        "rules": Array [
-          "border-top-right-radius: 40px; border-top-left-radius: 40px;",
-          ";",
-          "border-bottom-right-radius: 40px; border-bottom-left-radius: 40px;",
-          ";",
-          "margin-top: 0.25em; margin-right: 0.25em; margin-bottom: 0.25em; margin-left: 0.25em;",
-          ";",
-          "padding-top: 0.25em; padding-right: 1em; padding-bottom: 0.25em; padding-left: 1em;",
-          ";",
-          "transition: color .2s ease-in-out, background-color .2s ease-in-out, border .2s ease-in-out;",
-          ";display:'inline-flex';min-width:90px;height:40px;outline:0;cursor:pointer;",
-          "border-width: 2px; border-style: solid; border-color: #fff;",
-          ";background-color:",
-          "rgba(255,255,255,0)",
-          ";color:#fff;:hover{background-color:#fff;border-color:#fff;color:",
-          [Function],
-          ";}",
-          ";",
-          [Function],
-          ";font-size:14px;",
-          [Function],
-          ";",
-          [Function],
-          ";",
-          [Function],
-          ";",
-        ],
-      },
-      "displayName": "Button__ButtonStyled",
-      "render": [Function],
-      "styledComponentId": "Button__ButtonStyled-sc-1lfwom5-0",
-      "target": "button",
-      "toString": [Function],
-      "warnTooManyClasses": [Function],
-      "withComponent": [Function],
-    }
-  }
-  forwardedRef={null}
+<Button__ButtonStyled
   primary={true}
 >
   Primay Button
-</StyledComponent>
+</Button__ButtonStyled>
 `;
 
 exports[`[<Button />] when pass props secondary 1`] = `
-<StyledComponent
-  forwardedClass={
-    Object {
-      "$$typeof": Symbol(react.forward_ref),
-      "attrs": undefined,
-      "componentStyle": ComponentStyle {
-        "componentId": "Button__ButtonStyled-sc-1lfwom5-0",
-        "isStatic": false,
-        "rules": Array [
-          "border-top-right-radius: 40px; border-top-left-radius: 40px;",
-          ";",
-          "border-bottom-right-radius: 40px; border-bottom-left-radius: 40px;",
-          ";",
-          "margin-top: 0.25em; margin-right: 0.25em; margin-bottom: 0.25em; margin-left: 0.25em;",
-          ";",
-          "padding-top: 0.25em; padding-right: 1em; padding-bottom: 0.25em; padding-left: 1em;",
-          ";",
-          "transition: color .2s ease-in-out, background-color .2s ease-in-out, border .2s ease-in-out;",
-          ";display:'inline-flex';min-width:90px;height:40px;outline:0;cursor:pointer;",
-          "border-width: 2px; border-style: solid; border-color: #fff;",
-          ";background-color:",
-          "rgba(255,255,255,0)",
-          ";color:#fff;:hover{background-color:#fff;border-color:#fff;color:",
-          [Function],
-          ";}",
-          ";",
-          [Function],
-          ";font-size:14px;",
-          [Function],
-          ";",
-          [Function],
-          ";",
-          [Function],
-          ";",
-        ],
-      },
-      "displayName": "Button__ButtonStyled",
-      "render": [Function],
-      "styledComponentId": "Button__ButtonStyled-sc-1lfwom5-0",
-      "target": "button",
-      "toString": [Function],
-      "warnTooManyClasses": [Function],
-      "withComponent": [Function],
-    }
-  }
-  forwardedRef={null}
+<Button__ButtonStyled
   secondary={true}
 >
   Secondary Button
-</StyledComponent>
+</Button__ButtonStyled>
 `;

@@ -5,8 +5,7 @@ import 'jest-styled-components'
 import DreamshareStepDescription from './index'
 
 describe('[<DreamshareStepDescription />]', () => {
-  const wrap = (props = {}) =>
-    shallow(<DreamshareStepDescription {...props} />).dive()
+  const wrap = (props = {}) => shallow(<DreamshareStepDescription {...props} />)
 
   test('matches to snapshot', () => {
     const wrapper = wrap({ children: 'I am description' })

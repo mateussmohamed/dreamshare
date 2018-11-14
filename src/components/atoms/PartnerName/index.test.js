@@ -5,7 +5,7 @@ import 'jest-styled-components'
 import PartnerName from './index'
 
 describe('[<PartnerName />]', () => {
-  const wrap = (props = {}) => shallow(<PartnerName {...props} />).dive()
+  const wrap = (props = {}) => shallow(<PartnerName {...props} />)
 
   test('matches to snapshot', () => {
     const wrapper = wrap({ children: 'Your Title' })

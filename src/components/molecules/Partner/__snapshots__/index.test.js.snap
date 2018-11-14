@@ -7,15 +7,15 @@ exports[`[<Partner />] matches to snapshot 1`] = `
       "$$typeof": Symbol(react.forward_ref),
       "attrs": undefined,
       "componentStyle": ComponentStyle {
-        "componentId": "Partner__PartnerItem-sc-1mrrjxf-0",
+        "componentId": "PartnerCard-p9fmon-0",
         "isStatic": true,
         "rules": Array [
           "display:flex;flex-direction:column;align-items:center;",
         ],
       },
-      "displayName": "Partner__PartnerItem",
+      "displayName": "PartnerCard",
       "render": [Function],
-      "styledComponentId": "Partner__PartnerItem-sc-1mrrjxf-0",
+      "styledComponentId": "PartnerCard-p9fmon-0",
       "target": "article",
       "toString": [Function],
       "warnTooManyClasses": [Function],
@@ -24,19 +24,19 @@ exports[`[<Partner />] matches to snapshot 1`] = `
   }
   forwardedRef={null}
 >
-  <Partner__PartnerHeader>
-    <Partner__PartnerAvatar
+  <PartnerHeader>
+    <PartnerAvatar
       src="/assets/images/partner-1.jpg"
     />
-    <Partner__PartnerIcon
+    <PartnerIcon
       icon="music"
     />
-  </Partner__PartnerHeader>
-  <Partner__PartnerName>
+  </PartnerHeader>
+  <PartnerName>
     Bradley Hunter
-  </Partner__PartnerName>
-  <Partner__PartnerBio>
+  </PartnerName>
+  <PartnerBio>
     Based in Chicago. I love playing tennis and loud music.
-  </Partner__PartnerBio>
+  </PartnerBio>
 </StyledComponent>
 `;
