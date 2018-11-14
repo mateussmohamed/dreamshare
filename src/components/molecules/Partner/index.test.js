@@ -12,7 +12,7 @@ describe('[<Partner />]', () => {
       name: 'Bradley Hunter',
       avatar: '/assets/images/partner-1.jpg',
       bio: 'Based in Chicago. I love playing tennis and loud music.',
-      interests: 'music',
+      icon: 'music',
     })
 
     expect(wrapper).toMatchSnapshot()

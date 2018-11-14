@@ -1,58 +1,50 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`[<Hero />] matches to snapshot 1`] = `
-<StyledComponent
-  forwardedClass={
+exports[`[<SearchPartners />] matches to snapshot 1`] = `
+<Box
+  css={
     Object {
-      "$$typeof": Symbol(react.forward_ref),
-      "attrs": undefined,
-      "componentStyle": ComponentStyle {
-        "componentId": "Hero__HeroContainer-sc-1co6wbd-0",
-        "isStatic": false,
-        "rules": Array [
-          "box-sizing: border-box;",
-          [Function],
-          [Function],
-          [Function],
-          [Function],
-          [Function],
-          [Function],
-          [Function],
-          [Function],
-          "display: flex;",
-          [Function],
-          [Function],
-          [Function],
-          [Function],
-          "width:100%;height:100vh;flex-direction:column;",
-        ],
-      },
-      "displayName": "Hero__HeroContainer",
-      "propTypes": Object {
-        "alignItems": [Function],
-        "flexDirection": [Function],
-        "flexWrap": [Function],
-        "justifyContent": [Function],
-      },
-      "render": [Function],
-      "styledComponentId": "Hero__HeroContainer-sc-1co6wbd-0",
-      "target": "div",
-      "toString": [Function],
-      "warnTooManyClasses": [Function],
-      "withComponent": [Function],
+      "maxWidth": "1024px",
     }
   }
-  forwardedRef={null}
+  mx="auto"
+  my={
+    Array [
+      40,
+      90,
+    ]
+  }
 >
-  <HeroImage
-    src=""
-  />
-  <Hero__HeroContent>
-    <HeroHeader />
-    <HeroSpotlight
-      description="hero description"
-      title="Hero Title"
-    />
-  </Hero__HeroContent>
-</StyledComponent>
+  <Row
+    flexDirection="column"
+    mx={0}
+  >
+    <SearchPartners__FlexColumn
+      width={
+        Array [
+          1,
+          1,
+          1,
+        ]
+      }
+    >
+      <SearchPartners__Title>
+        Crate your holiday activity
+      </SearchPartners__Title>
+      <SearchPartners__SubTitle>
+        Hi! What are your holiday interests?
+      </SearchPartners__SubTitle>
+      <SearchPartners__Form>
+        <SearchPartners__Input
+          placeholder="Enter your interests"
+        />
+        <Button
+          secondary={true}
+        >
+          Search partners
+        </Button>
+      </SearchPartners__Form>
+    </SearchPartners__FlexColumn>
+  </Row>
+</Box>
 `;

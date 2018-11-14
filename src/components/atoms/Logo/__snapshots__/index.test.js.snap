@@ -14,7 +14,9 @@ exports[`[<Logo />] matches to snapshot 1`] = `
           [Function],
           ";font-size:",
           [Function],
-          ";font-weight:bold;text-transform:uppercase;color:",
+          ";font-weight:",
+          [Function],
+          ";text-transform:uppercase;color:",
           [Function],
           ";",
         ],
@@ -31,6 +33,7 @@ exports[`[<Logo />] matches to snapshot 1`] = `
   forwardedRef={null}
   size={20}
   text="Logo"
+  weight="bold"
 >
   Logo
 </StyledComponent>

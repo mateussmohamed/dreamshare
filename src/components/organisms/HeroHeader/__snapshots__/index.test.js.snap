@@ -10,7 +10,7 @@ exports[`[<HeroHeader />] matches to snapshot 1`] = `
         "componentId": "HeroHeader__HeroHeaderStyled-yd36gz-0",
         "isStatic": true,
         "rules": Array [
-          "flex-direction:row;justify-content:space-between;align-items:center;margin-top:40px;position:relative;z-index:2;",
+          "justify-content:space-between;align-items:center;position:relative;z-index:2;margin-left:0;margin-right:0;@media only screen and (min-width:320px){margin-top:20px;flex-direction:column-reverse;}@media only screen and (min-width:768px){flex-direction:row;}@media only screen and (min-width:1024px){margin-top:40px;}",
         ],
       },
       "displayName": "HeroHeader__HeroHeaderStyled",
@@ -27,11 +27,19 @@ exports[`[<HeroHeader />] matches to snapshot 1`] = `
 >
   <Column
     flex="none"
+    mt={
+      Array [
+        100,
+        0,
+        0,
+      ]
+    }
   >
     <Logo
       color="#fff"
       size={20}
-      text="Dreamshare"
+      text="DREAMSHARE"
+      weight="bold"
     />
   </Column>
   <Column

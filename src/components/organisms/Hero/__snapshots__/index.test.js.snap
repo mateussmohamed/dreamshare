@@ -44,9 +44,7 @@ exports[`[<Hero />] matches to snapshot 1`] = `
   }
   forwardedRef={null}
 >
-  <HeroImage
-    src=""
-  />
+  <HeroImage />
   <Hero__HeroContent>
     <HeroHeader />
     <HeroSpotlight

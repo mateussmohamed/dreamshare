@@ -3,9 +3,12 @@
 exports[`[<Home />] matches to snapshot 1`] = `
 <Page__Wrapper>
   <Hero
-    description="Find your holliday partner"
-    srcImage="/assets/images/hero.jpg"
+    description="And find the perfect partner to fullfill it"
     title="SHARE YOUR HOLIDAY DREAM"
   />
+  <HowDreamshare />
+  <DiscoverPartners />
+  <SearchPartners />
+  <Footer />
 </Page__Wrapper>
 `;
