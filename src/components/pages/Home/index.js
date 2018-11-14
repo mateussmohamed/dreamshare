@@ -11,10 +11,7 @@ import {
 
 const Home = () => (
   <Page>
-    <Hero
-      title="SHARE YOUR HOLIDAY DREAM"
-      description="And find the perfect partner to fullfill it"
-    />
+    <Hero />
     <HowDreamshare />
     <DiscoverPartners />
     <SearchPartners />
