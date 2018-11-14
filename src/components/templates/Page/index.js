@@ -8,9 +8,9 @@ const Wrapper = styled.div`
   display: block;
 `
 
-const Page = ({ children }) => (
+const Page = props => (
   <Wrapper>
-    {children}
+    {props.children}
     <Footer />
   </Wrapper>
 )
