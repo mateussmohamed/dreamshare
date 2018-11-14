@@ -6,7 +6,6 @@ import {
   HowDreamshare,
   SearchPartners,
   DiscoverPartners,
-  Footer,
 } from 'organisms'
 
 const Home = () => (
@@ -15,7 +14,6 @@ const Home = () => (
     <HowDreamshare />
     <DiscoverPartners />
     <SearchPartners />
-    <Footer />
   </Page>
 )
 
