@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const DreamshareStepBadge = styled.span`
+const StepBadge = styled.span`
   padding: 3px 8px;
   border-radius: 20px;
   background-color: ${props => props.theme.colors.lightRed};
@@ -12,4 +12,4 @@ const DreamshareStepBadge = styled.span`
   color: #fff;
 `
 
-export default DreamshareStepBadge
+export default StepBadge

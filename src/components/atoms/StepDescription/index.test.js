@@ -2,10 +2,10 @@ import React from 'react'
 import { shallow } from 'enzyme'
 import 'jest-styled-components'
 
-import DreamshareStepDescription from './index'
+import StepDescription from './index'
 
-describe('[<DreamshareStepDescription />]', () => {
-  const wrap = (props = {}) => shallow(<DreamshareStepDescription {...props} />)
+describe('[<StepDescription />]', () => {
+  const wrap = (props = {}) => shallow(<StepDescription {...props} />)
 
   test('matches to snapshot', () => {
     const wrapper = wrap({ children: 'I am description' })

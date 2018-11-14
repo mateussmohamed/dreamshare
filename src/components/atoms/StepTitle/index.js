@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const DreamshareStepTitle = styled.h2`
+const StepTitle = styled.h2`
   margin: 0;
   ${props => props.theme.typography.montserratStyle};
   font-size: 24px;
@@ -8,4 +8,4 @@ const DreamshareStepTitle = styled.h2`
   color: #ffffff;
 `
 
-export default DreamshareStepTitle
+export default StepTitle
