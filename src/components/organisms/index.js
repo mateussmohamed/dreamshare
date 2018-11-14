@@ -4,6 +4,7 @@ import HeroHeader from './HeroHeader'
 import HowDreamshare from './HowDreamshare'
 import Footer from './Footer'
 import SearchPartners from './SearchPartners'
+import DiscoverPartners from './DiscoverPartners'
 
 export {
   HeroSpotlight,
@@ -12,4 +13,5 @@ export {
   HowDreamshare,
   Footer,
   SearchPartners,
+  DiscoverPartners,
 }

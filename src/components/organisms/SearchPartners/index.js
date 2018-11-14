@@ -73,7 +73,7 @@ const SearchPartners = () => (
         <Title>Crate your holiday activity</Title>
         <SubTitle>Hi! What are your holiday interests?</SubTitle>
         <Form>
-          <Input placeholder="Enter your insterests" />
+          <Input placeholder="Enter your interests" />
           <Button secondary>Search partners</Button>
         </Form>
       </FlexColumn>
