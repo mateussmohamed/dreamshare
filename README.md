@@ -17,13 +17,21 @@ Example of a Implementation of layout using react + atomic design
 * Netlify
 
 ## Install dependencies
-> $ yarn
+```sh
+$ yarn
+```
 
 ## Run project
-> $ yarn start
+```sh
+$ yarn start
+```
 
 ## Run tests
-> $ yarn tests
+```sh
+$ yarn tests
+```
 
 ## Run docz
-> $ yarn docz dev
+```sh
+$ yarn docz dev
+```
