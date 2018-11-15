@@ -1,19 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import {
-  DreamshareStepCard,
-  DreamshareStepTitle,
-  DreamshareStepBadge,
-  DreamshareStepDescription,
-} from 'atoms'
+import { StepCard, StepTitle, StepBadge, StepDescription } from 'atoms'
 
 const DreamshareStep = props => (
-  <DreamshareStepCard {...props}>
-    <DreamshareStepBadge>{props.badge}</DreamshareStepBadge>
-    <DreamshareStepTitle>{props.title}</DreamshareStepTitle>
-    <DreamshareStepDescription>{props.description}</DreamshareStepDescription>
-  </DreamshareStepCard>
+  <StepCard {...props}>
+    <StepBadge>{props.badge}</StepBadge>
+    <StepTitle>{props.title}</StepTitle>
+    <StepDescription>{props.description}</StepDescription>
+  </StepCard>
 )
 
 DreamshareStep.propTypes = {

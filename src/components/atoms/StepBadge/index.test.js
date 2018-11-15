@@ -2,10 +2,10 @@ import React from 'react'
 import { shallow } from 'enzyme'
 import 'jest-styled-components'
 
-import DreamshareStepBadge from './index'
+import StepBadge from './index'
 
-describe('[<DreamshareStepBadge />]', () => {
-  const wrap = (props = {}) => shallow(<DreamshareStepBadge {...props} />)
+describe('[<StepBadge />]', () => {
+  const wrap = (props = {}) => shallow(<StepBadge {...props} />)
 
   test('matches to snapshot', () => {
     const wrapper = wrap({ children: 'I am badge' })

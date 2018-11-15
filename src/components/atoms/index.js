@@ -20,10 +20,10 @@ import PartnerAvatar from './PartnerAvatar'
 import PartnerName from './PartnerName'
 import PartnerIcon from './PartnerIcon'
 import PartnerBio from './PartnerBio'
-import DreamshareStepCard from './DreamshareStepCard'
-import DreamshareStepTitle from './DreamshareStepTitle'
-import DreamshareStepBadge from './DreamshareStepBadge'
-import DreamshareStepDescription from './DreamshareStepDescription'
+import StepCard from './StepCard'
+import StepTitle from './StepTitle'
+import StepBadge from './StepBadge'
+import StepDescription from './StepDescription'
 
 export {
   Container,
@@ -48,8 +48,8 @@ export {
   PartnerName,
   PartnerIcon,
   PartnerBio,
-  DreamshareStepCard,
-  DreamshareStepTitle,
-  DreamshareStepBadge,
-  DreamshareStepDescription,
+  StepCard,
+  StepTitle,
+  StepBadge,
+  StepDescription,
 }

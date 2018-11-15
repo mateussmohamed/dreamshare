@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const DreamshareStepCard = styled.article`
+const StepCard = styled.article`
   width: auto;
   border-radius: 3px;
   background-image: linear-gradient(
@@ -29,4 +29,4 @@ const DreamshareStepCard = styled.article`
   }
 `
 
-export default DreamshareStepCard
+export default StepCard
