@@ -1,5 +1,4 @@
 import React from 'react'
-import withThemeProvider from '../../theme/withThemeProvider'
 import Head from 'next/head'
 import { ThemeProvider } from 'styled-components'
 import theme, { GlobalStyle } from 'components/theme'

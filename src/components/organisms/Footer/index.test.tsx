@@ -4,10 +4,8 @@ import { Footer } from './index'
 import withThemeProvider from '../../theme/withThemeProvider'
 
 describe('[<Footer />]', () => {
-  const wrap = props => withThemeProvider(() => <Footer {...props} />)
-
   test('matches to snapshot', () => {
-    const wrapper = wrap()
+    const wrapper = withThemeProvider(() => <Footer />)
 
     expect(wrapper).toMatchSnapshot()
   })
