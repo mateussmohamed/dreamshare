@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`[<HeroDescription />] matches to snapshot 1`] = `
-<HeroDescription__HeroDescriptionStyled>
-  I am a description
-</HeroDescription__HeroDescriptionStyled>
-`;
