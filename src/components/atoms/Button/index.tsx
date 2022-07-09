@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
 
 const defaultStyle = css`
@@ -52,9 +51,9 @@ const ghostStyle = css`
 
 interface ButtonProps {
   readonly children: React.ReactNode
-  readonly primary: boolean
-  readonly secondary: boolean
-  readonly ghost: boolean
+  readonly primary?: boolean
+  readonly secondary?: boolean
+  readonly ghost?: boolean
 }
 
 const ButtonStyled = styled.button<ButtonProps>`
@@ -78,10 +77,3 @@ const ButtonStyled = styled.button<ButtonProps>`
 export const Button = props => (
   <ButtonStyled {...props}>{props.children}</ButtonStyled>
 )
-
-Button.propTypes = {
-  children: PropTypes.node.isRequired,
-  primary: PropTypes.bool,
-  secondary: PropTypes.bool,
-  ghost: PropTypes.bool,
-}

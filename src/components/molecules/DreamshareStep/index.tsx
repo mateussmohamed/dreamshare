@@ -1,20 +1,18 @@
 import React from 'react'
 
-import PropTypes from 'prop-types'
-
 import { StepCard, StepTitle, StepBadge, StepDescription } from '../../atoms'
 
-export const DreamshareStep = props => (
+interface DreamshareStepProps {
+  badge: string
+  title: string
+  description: string
+  image: string
+}
+
+export const DreamshareStep = (props: DreamshareStepProps) => (
   <StepCard {...props}>
     <StepBadge>{props.badge}</StepBadge>
     <StepTitle>{props.title}</StepTitle>
     <StepDescription>{props.description}</StepDescription>
   </StepCard>
 )
-
-DreamshareStep.propTypes = {
-  badge: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
-}
