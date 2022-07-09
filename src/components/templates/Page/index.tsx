@@ -1,6 +1,5 @@
 import React from 'react'
 
-import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import { Footer } from '../../organisms'
@@ -9,13 +8,9 @@ const Wrapper = styled.div`
   display: block;
 `
 
-export const Page = props => (
+export const Page = ({ children }: { children: React.ReactNode }) => (
   <Wrapper>
-    {props.children}
+    {children}
     <Footer />
   </Wrapper>
 )
-
-Page.propTypes = {
-  children: PropTypes.node,
-}

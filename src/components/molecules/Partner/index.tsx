@@ -1,7 +1,5 @@
 import React from 'react'
 
-import PropTypes from 'prop-types'
-
 import {
   PartnerCard,
   PartnerHeader,
@@ -11,7 +9,14 @@ import {
   PartnerBio,
 } from '../../atoms'
 
-export const Partner = ({ name, bio, avatar, icon }) => (
+interface PartnerProps {
+  name: string
+  bio: string
+  avatar: string
+  icon: string
+}
+
+export const Partner = ({ name, bio, avatar, icon }: PartnerProps) => (
   <PartnerCard>
     <PartnerHeader>
       <PartnerAvatar src={avatar} />
@@ -21,10 +26,3 @@ export const Partner = ({ name, bio, avatar, icon }) => (
     <PartnerBio>{bio}</PartnerBio>
   </PartnerCard>
 )
-
-Partner.propTypes = {
-  name: PropTypes.string.isRequired,
-  bio: PropTypes.string.isRequired,
-  avatar: PropTypes.string.isRequired,
-  icon: PropTypes.string.isRequired,
-}

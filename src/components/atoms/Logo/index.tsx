@@ -1,11 +1,12 @@
 import React from 'react'
 
-import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 interface LogoProps {
-  readonly size: number
-  readonly weight: string
+  text?: string
+  color?: string
+  size?: number
+  weight?: string
 }
 
 const LogoStyled = styled.a<LogoProps>`
@@ -16,18 +17,12 @@ const LogoStyled = styled.a<LogoProps>`
   color: ${props => props.color};
 `
 
-export const Logo = props => <LogoStyled {...props}>{props.text}</LogoStyled>
+export const Logo = (props: LogoProps) => {
+  const { text = 'Logo', color = '#fff', size = 20, weight = 'bold' } = props
 
-Logo.defaultProps = {
-  text: 'Logo',
-  color: '#fff',
-  size: 20,
-  weight: 'bold',
-}
-
-Logo.propTypes = {
-  text: PropTypes.string.isRequired,
-  color: PropTypes.string,
-  size: PropTypes.number,
-  weight: PropTypes.string,
+  return (
+    <LogoStyled color={color} size={size} weight={weight}>
+      {text}
+    </LogoStyled>
+  )
 }
